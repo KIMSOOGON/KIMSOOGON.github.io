@@ -143,6 +143,7 @@
 						<br>- 선박의료관리자 
 						<br>- 전파전자통신기능사 
 						<br>- 구명정조종사 
+						<br>- 정보처리기사 필기 합격(23.03.05)
 					</p>
 				</div>
 			</div>
@@ -150,7 +151,7 @@
 				<h3 class="resume-title">개발자의 삶(미래)</h3>
 	            <div class="resume-item">
 					<h4>구디아카데미</h4>
-					<h5>2022.10.18 ~ 2023.03.30 </h5>
+					<h5>2022.10.18 ~ 2022.03.30 </h5>
 					<p><em>(디지털컨버전스) 공공데이터 융합 자바/스프링 개발자 양성과정</em>
 						<br><small>총 113일 / 900시간</small>
 					</p>
@@ -212,25 +213,28 @@
 	<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
 		<div class="col-lg-6 col-md-6 portfolio-item filter-spring">
-            <h2><img src="assets/img/number5.png">파이널(시작전)</h2>
+            <h2><img src="assets/img/number5.png">통합플랫폼(진행중)</h2>
             <div class="portfolio-wrap">
-				<img src="" class="img-fluid" alt=""> <!-- 사진 추가 -->
-				<div class="portfolio-info">
-					<h4>파이널(시작전)</h4>
-					<p>▽클릭하시면 이동합니다</p>
-					<div class="portfolio-links">
-						<a href="" target="_blank"><i class="bx bx-link"></i></a> <!-- 프로젝트 이동 주소 -->
-					</div>
-             	</div>
+				<img src="assets/img/portfolio/FTP0.png" class="img-fluid" alt="">
+				<img src="assets/img/portfolio/FTP1.png" class="img-fluid" alt="">
+				<a href="http://3.38.82.69/58platform/integrationPage" target="_blank">
+					<div class="portfolio-info">
+						<h4>통합플랫폼(진행중)</h4>
+						<p>▽클릭하시면 이동합니다</p>
+	             	</div>
+             	</a>
             </div>
         </div>
         <div class="col-lg-6 col-md-6 portfolio-item filter-spring">
 			<div class="content">
 			<header class="align-center">
-				<p>파이널 팀 프로젝트 (미완)</p>
+				<p>파이널 팀 프로젝트 (통합플랫폼)</p>
 			</header>
 				<p> 
-				<a href="" class="btn btn-dark" role="button" style="text-decoration: none;">[GitHub 바로가기]</a> <!-- 프로젝트 이동 주소 -->
+				<a href="https://github.com/goodee-project/58platform.git" class="btn btn-dark" role="button" style="text-decoration: none;">[GitHub 바로가기]</a> <!-- 프로젝트 이동 주소 -->
+				 <button type="button" class="btn btn-secondary" onclick="window.open('assets/img/final ERD.png')">ERD</button>
+				 <button type="button" class="btn btn-secondary" onclick="window.open('assets/uiux/UI & UX 통합.pdf')">UI/UX</button>
+				 <a href="http://3.38.82.69/58platform/integrationPage" class="btn btn-info" target="_blank">AWS</a>
 				<hr>
 				사용한 프로그램 : Spring-Tool-Suite4, HeidisSQL
 				<hr>
@@ -238,12 +242,13 @@
 				<br>
 				사용 언어:JAVA, SQL, JavaScript, JQuery, JDBC, JSTL, Bootstrap, Ajax, API
 				<hr>
-				--시작전 (요구사항 작성중)--
-				<!-- 
-				내용 : Spring MVC방식을 이용해서 IT취업 전문 학원 LMS를 구현<br>
-				사용자가 학생과 강사, 운영자가 있고 각각 레벨을 나누어 사용자에 따라 프로그롬을 사용할 수 있습니다.<br>
-				API주소를 써서 주소를 구현해보고 ajax를 이용하여 controller에 가지않고 jsp에서 처리하는 비동기식 기능을 구현해봤습니다.
-				 -->
+				담당기능 구현:[통계관리], [배송관리], [정산관리]<br>
+				통계관리 : 페이충전금액을 일/월/연/기간별 테이블로 출력 가능<br>
+				restAPI 및 ajax, chartJS를 활용한 각 테이블 chart 출력 구현<br>
+				ajax pdf추출 라이브러리를 활용해 차트를 pdf로 저장하는 기능 구현<br>
+				누적충전금액을 조회 가능하며 정해진 기간내 충전금 상위10명의 목록을 출력<br>
+				회원들의 모든 충전내역 조회 가능<br>
+				나머지 기능들 아직 구현중 (미완 진행중) <br>
 				</p>
 			</div>
 		</div>
@@ -256,11 +261,11 @@
             	<img src="assets/img/portfolio/online-test2.png" class="img-fluid" alt="">
             	<img src="assets/img/portfolio/online-test3.png" class="img-fluid" alt="">
             	<a href="http://3.37.147.46/online-test/Home" target="_blank">
-            	<div class="portfolio-info">
-                <h4>LMS</h4>
-                <p>▽클릭하시면 이동합니다</p>
-	              </div>
-	              </a>
+	            	<div class="portfolio-info">
+		                <h4>LMS</h4>
+		                <p>▽클릭하시면 이동합니다</p>
+					</div>
+				</a>
            	 </div>
         </div>
 		<div class="col-lg-6 col-md-6 portfolio-item filter-spring">
@@ -286,13 +291,11 @@
                  기본적인 actor는 직원/강사/학생 세 파트로 분류됩니다.<br>
                  Filter를 통해 UTF-8 인코딩을 기본 적용했습니다. <br>
                  Filter를 통해 각 항목별 컨트롤러 접근제한을 설정했습니다.<br>
-                 직원만이 직원/강사/학생 목록조회, 등록 및 탈퇴에 권한이 있습니다.<br>
-                 회원가입시(계정등록), Ajax와 restAPI를 활용한 비동기요청으로 id중복검사를 구현하였습니다.<br>
-                 직원/강사/학생은 각각 비밀번호변경이 가능합니다. <br>
+                 회원가입시, Ajax와 restAPI를 활용한 비동기요청으로 id중복검사를 구현하였습니다.<br>
+                 직원은 직원/강사/학생의 총괄 CRUD 기능에 권한이 있습니다.<br>
                  강사는 시험CRUD(등록/수정/삭제), 시험문제 및 답지 CRUD(등록/수정/삭제)가 가능합니다.<br>
-                 학생은 시험응시 및 점수/석차/답안지 확인이 가능합니다.<br> 
-                 각 기능들의 기본적인 유효성검사는 javascript jQuery를 활용했습니다.<br>
-                 css는 bootstrap템플릿을 활용해 적용했습니다. 
+                 학생은 시험응시 및 점수/석차/답안지 확인이 가능합니다.<br>
+                 chartjs와 Ajax, restController를 활용해 학생 성적을 chart로도 조회 가능합니다.<br> 
               </p>
             </div>
           </div>
@@ -334,21 +337,17 @@
               <br>
               사용언어 : JAVA, SQL, Bootstrap, JavaScript, JQuery, JavaServlet
               <hr>
-              [제가 담당한 기능들입니다]<br>
-              필터를 통해 utf-8 인코딩 설정, 리스너를 통해 db연결과 세션 접속자수 카운팅을 구현했습니다.
+              JavaScript Jquery를 이용한 유효성검사, 필터와 리스너를 사용한 인코딩 및 컨트롤러 접근권한을 설정했습니다.
               <br>
               회원과 직원으로 분류하며 기본적인 직원 및 회원의 CRUD(회원가입/로그인/정보수정/회원탈퇴)와
               직원의 직위 및 재직상태에 따른 각 기능의 권한을 설정했습니다.
-              <br><br>
-              -재직상태에 따른 기능제한- <br>
-              [사직자: 로그인 불가, 휴직자: 직원기능접근불가, 재직자: 직원기능활용가능]<br>
-              -직위에 따른 기능제한- <br>
-              [인턴: 상품/문의/리뷰관리만 가능, 사원: 인턴등록 및 공지관리까지 가능, 매니저: 직원관리(재직상태변경 및 직위변경)가 가능]
               <br>
-              카카오 주소API를 이용해 회원주소 CRUD기능을 구현했습니다.<br>
-              회원의 포인트 적립 및 사용 시, 실시간 반영되게끔 구현했습니다.<br>
-              비회원일시, 세션을 통해 장바구니 정보를 실시간 반영하고 로그인시, 회원장바구니에 추가되게끔 구현했습니다. <br>
-              JavaScript, Jquery를 통한 모든 입력폼에 대해 유효성검사를 적용했습니다.<br> 
+              [사직자: 로그인 불가, 휴직자: 직원기능접근불가, 재직자: 직원기능활용가능, 
+              매니저직위의 직원만 직원관리가 가능]
+              <br>
+              [회원의 경우 카카오API를 활용한 회원주소CRUD기능, point 활용,
+              장바구니 및 주문, 비회원일 경우, 세션을 통한 장바구니 기능을 구현]
+              <br>
               이 외에도 Bootstrap템플릿을 통해 디자인을 적용하고
               다양하고 디테일한 기능들을 구현하며 흥미와 재미를 느끼며 마무리했습니다.
               </p>
